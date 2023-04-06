@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Customer from "./components/Customer";
 import "./App.css";
+import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableHead from "@mui/material/TableHead";
 import TableBody from "@mui/material/TableBody";
@@ -37,7 +38,7 @@ const customers = [
 class App extends Component {
   render() {
     return (
-      <div>
+      <Paper>
         <Table>
           <TableHead>
             <TableRow>
@@ -66,7 +67,7 @@ class App extends Component {
             ;
           </TableBody>
         </Table>
-      </div>
+      </Paper>
     );
   }
 }
